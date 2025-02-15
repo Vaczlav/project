@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Hover</title>
+    <style>
+        /* Basic styling for the text */
+        #hoverElement {
+            font-size: 24px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Hover over the text below:</h2>
+
+    <!-- Element that changes color when hovered -->
+    <p id="hoverElement" 
+       onmouseover="this.style.color='red'"  
+       onmouseout="this.style.color='blue'">Hover over me!</p> <!-- Reset color to blue on mouseout -->
+
+</body>
+</html>
