@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bridge Data Example</title>
+    <script src="/JavaSctipt/JavaScript_3.js" defer></script> <!-- Linking the JS file -->
+</head>
+<body>
+
+    <h1>Data Attribute Assignment
+        </h1>
+    <h3>Famous Bridges<br>Click on a bridge to see its details:</h3>
+
+    <ul>
+        <!-- Each bridge has custom data attributes -->
+        <li onclick="showBridgeInfo(this)" data-year="1997" data-type="Box Girder" data-location="Prince Edward Island, Canada">Confederation Bridge</li>
+        <li onclick="showBridgeInfo(this)" data-year="1937" data-type="Suspension" data-location="San Francisco, USA">Golden Gate Bridge</li>
+        <li onclick="showBridgeInfo(this)" data-year="1883" data-type="Suspension" data-location="New York City, USA">Brooklyn Bridge</li>
+        <li onclick="showBridgeInfo(this)" data-year="1894" data-type="Cantilever" data-location="Scotland, UK">Forth Bridge</li>
+        <li onclick="showBridgeInfo(this)" data-year="1998" data-type="Cable-Stayed" data-location="Kobe, Japan">Akashi Kaikyō Bridge</li>
+
+    </ul>
+
+    <!-- Placeholder for bridge details -->
+    <p id="output">Click on a bridge to see more details.</p>
+
+</body>
+</html>

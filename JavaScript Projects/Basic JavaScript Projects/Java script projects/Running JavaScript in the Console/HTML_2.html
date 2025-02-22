@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../CSS/CSS_1.css"> <!-- Link to CSS file -->
+    <script src="/JavaSctipt/JavaScript_2.js" defer></script> <!-- Link to JS file -->
+</head>
+<body>
+
+    <h2>Contact Form Challenge</h2>
+
+    <form id="contactForm" onsubmit="return validateForm()">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter your first name*"><br><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Enter your last name*"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email*"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" placeholder="Your message*"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <p id="error_message" style="color:red;"></p>
+
+    <br><br>
+    <h5 style="color: grey; font-style: italic; text-align: center;">*All fields are required</h5>
+
+
+
+</body>
+</html>
