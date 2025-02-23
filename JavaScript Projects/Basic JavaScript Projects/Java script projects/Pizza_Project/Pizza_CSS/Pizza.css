@@ -1,0 +1,71 @@
+/* Page background and main heading */
+body {
+	background-color: darkblue;
+}
+
+h1 {
+	font-family: Helvetica;
+	color: white;
+	text-align: center;
+}
+
+/* Subheadings and general text */
+h3 {
+	font-family: Arial;
+	color: snow;
+}
+
+div {
+	color: lightyellow;
+	font-family: Monospace;
+}
+
+/* Menu background container */
+#menuBG {
+	width: 400px;
+	height: 470px;
+	margin: 10px auto;
+}
+
+/* Menu form layout */
+#frmMenu {
+	width: 600px;
+	height: 200px;
+}
+
+/* Order summary and total price */
+#cart {
+	width: 400px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+#showText, #totalPrice {
+	width: 200px;
+	height: 190px;
+	float: left;
+}
+
+#totalPrice {
+	margin: 20px auto;
+	float: right;
+}
+
+/* Column layouts */
+.left, .center, .right {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/* Order button */
+#btnOrder {
+	width: 100px;
+	height: 40px;
+	margin: 25px auto;
+	display: block;
+}
