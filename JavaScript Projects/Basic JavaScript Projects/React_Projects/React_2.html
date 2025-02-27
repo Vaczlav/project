@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React Like Button with Fade-in</title>
+
+    <!-- React Libraries -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- CSS for Fade-in Effect -->
+    <style>
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Apply fade-in to the button */
+        .fade-in {
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* Style for the button */
+        button {
+            padding: 10px 20px;
+            font-size: 1.5vw; /* Responsive font size */
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Hover effect */
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- React container -->
+    <div id="like_button_container"></div>
+
+    <script>
+        const X = React.createElement;
+
+        class LikeButton extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = { liked: false };
+            }
+
+            render() {
+                if (this.state.liked) {
+                    return X(
+                        'div',
+                        { className: 'fade-in' }, // Apply fade-in after click
+                        'You clicked the like button!'
+                    );
+                }
+
+                return X(
+                    'button',
+                    { onClick: () => this.setState({ liked: true }) },
+                    'Like'
+                );
+            }
+        }
+
+        const domContainer = document.querySelector('#like_button_container');
+        ReactDOM.render(X(LikeButton), domContainer);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React JSX Example</title>
+
+    <!-- React Library -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+
+    <!-- React DOM Library -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Babel Compiler -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        /* Apply vw unit for responsive font size */
+        h1 {
+            font-size: 5vw; /* The text size will adjust with the browser width */
+            text-align: center; /* Center the text */
+            color: #4CAF50; /* Just for better visibility */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- React will render inside this div -->
+    <div id="JSX"></div>
+
+    <script type="text/babel">
+        /* React Component */
+        class Greeting extends React.Component {
+            render() {
+                return <h1>Hello, React!</h1>; /* Responsive text */
+            }
+        }
+
+        /* Render the component */
+        ReactDOM.render(<Greeting />, document.getElementById('JSX'));
+    </script>
+
+</body>
+</html>
