@@ -1,4 +1,4 @@
-# Portfolio Website Repository
+# The Tech Academy's Bootcamp Repository
 
 This repository contains files and folders related to my learning journey at **The Tech Academy's Bootcamp**. It includes various web development projects, assignments, and practice exercises.
 
